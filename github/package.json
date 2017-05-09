@@ -1,12 +1,12 @@
 {
-  "name": "Lanchonete",
+  "name": "baseProject",
   "version": "1.0.0",
-  "description": "Freelance Project for web app",
+  "description": "Base structure to Init, Git and Deploy Projects",
   "main": "Gruntfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Fabiano de Lima",
+  "author": "Focus Textil",
   "license": "BSD",
   "dependencies": {
     "grunt": "~0.4.2",
@@ -21,7 +21,6 @@
   },
   "devDependencies": {
     "express": "~3.4.4",
-    "grunt-contrib-connect": "^1.0.2",
     "grunt-contrib-less": "~0.8.2",
     "grunt-jsdoc": "~0.6.4"
   }

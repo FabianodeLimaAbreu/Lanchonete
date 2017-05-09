@@ -4,15 +4,6 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     // Task configuration
-    connect: {
-      server: {
-        options: {
-          port: 8000,
-          hostname: '*',
-          keepalive:true
-        }
-      }
-    },
     clean: {
       build: {
         src: ['dist']
@@ -44,7 +35,7 @@ module.exports = function(grunt) {
       //Copy all the files, except that
       build:{
         //The line bellow can be changed accordding to the project
-        src:['**','!node_modules/**','!**/Gruntfile.js','!**/package.json','!less/**','!images/psd/**','!Lanchonete/**',"!docs/**"],
+        src:['**','!node_modules/**','!**/Gruntfile.js','!**/package.json','!less/**','!images/psd/**.psd','!Lanchonete/**',"!docs/**"],
         dest:'dist',
         expand:true
       },
@@ -55,7 +46,7 @@ module.exports = function(grunt) {
         expand:true
       },
       github:{
-        src:['**','!node_modules/**','!Lanchonete/**','!dist/**',"!docs/**"],
+        src:['**','!node_modules/**','!Lanchonete/**','!dist/**'],
         dest:'Lanchonete/github',
         expand:true
       }
@@ -124,7 +115,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-usemin');
   grunt.loadNpmTasks('grunt-contrib-clean');
   grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-connect')
   grunt.loadNpmTasks('grunt-jsdoc');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -158,7 +148,6 @@ module.exports = function(grunt) {
   grunt.registerTask(
     'dev',
     'Developing',
-    ['connect','watch','jsdoc']
-    //[]
+    ['watch','jsdoc']
   );
 };
