@@ -50,13 +50,13 @@ table {
 	border-spacing: 0
 }
 .floatLeft {
-	float: left;
+	float: left !important;
 }
 img.floatLeft {
 	margin: 0 10px 10px 10px
 }
 .floatRight {
-	float: right;
+	float: right !important;
 }
 img.floatRight {
 	margin: 0 10px 10px 10px
@@ -78,4 +78,9 @@ br.floatClear {
 }
 .hide{
 	display:none;
+}
+*{
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }

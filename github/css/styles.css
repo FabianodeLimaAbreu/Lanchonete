@@ -21,21 +21,6 @@
 .s-five {
   width: 50px;
 }
-.s-eight-five {
-  width: 85px;
-}
-.top-ten {
-  margin-top: 10px;
-}
-.m-ten {
-  margin-bottom: 10px;
-}
-.m-right {
-  margin-right: 10px;
-}
-.m-left {
-  margin-left: 10px;
-}
 html,
 body {
   height: 100%;
@@ -44,8 +29,8 @@ body {
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 12px;
-  color: #9c9fa0;
+  font-size: 16px;
+  color: #757576;
   font-weight: 400;
   background: #fff;
 }
@@ -59,92 +44,206 @@ body #wrap {
 body.noscroll {
   overflow-y: hidden;
 }
-/********************************
-***************************************  IE update  *****************************/
-div.modalie {
-  background: url(../images/modalbackground.png) repeat;
-  height: 100%;
-  width: 100%;
-  padding-left: 50%;
-  z-index: 99;
-  position: absolute;
-  display: none;
-  font-family: "Arial";
-}
-.modalie .bg {
-  position: absolute;
-  color: #717171;
-  z-index: 999;
-  margin: 150px -200px auto;
-  background-image: url(../images/bg.png);
-  width: 400px;
-  height: 410px;
-  border: 1px solid #c9c9c9;
-  border-radius: 3px;
-}
-/*header*/
-.modalie .head {
-  height: 80px;
-}
-.modalie .head img {
-  margin-top: 30px;
-  margin-left: 55px;
-  float: left;
-}
-.modalie .head p {
-  font-size: 15px;
-  margin: 20px;
-  float: left;
-  width: 40px;
-}
-.modalie .head a span {
-  margin: 20px;
-  float: right;
+/*******************************
+            LOGIN
+*******************************/
+.login-container {
+  position: relative;
   display: block;
-  background-image: url(../images/gui-ie.png);
+  max-width: 490px;
+  width: 99%;
+  height: 410px;
+  margin: 0 auto;
+  color: #f3772f;
+  font-size: 1.2em;
+  line-height: 30px;
+}
+.login-container .logo_small {
+  position: relative;
+  display: block;
+  margin: 0 auto 20px;
+}
+.login-container .form-container {
+  background: #f26817;
+  width: 100%;
+  height: 290px;
+  position: relative;
+  float: left;
+}
+.login-container .form-container:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: url(../images/icon_downmark.png) no-repeat;
+  width: 34px;
+  height: 24px;
+  bottom: -24px;
+  left: 20px;
+}
+.login-container .form-container .progress-bar {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 20px;
+  background: #000;
+}
+.login-container .form-container .login {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 310px;
+  padding: 20px;
+}
+.login-container .form-container .login .form-control {
+  margin-top: 20px;
+}
+.login-container .form-container .login .submit {
+  width: 100%;
+  background: #fff;
+  color: #f3772f;
+  float: right;
+  margin-top: 20px;
+}
+.login-container .links-container {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 30px;
+  margin-top: 30px;
+}
+.login-container .links-container a {
+  color: #f3772f;
+  line-height: 30px;
+}
+.login-container .links-container a.login {
+  margin-left: 10px;
+}
+.divider {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 20px;
+  display: block;
+  color: #f3772f;
+}
+.divider span {
+  position: relative;
+  float: left;
+  width: 45%;
+  border-bottom: 1px solid #f3772f;
+}
+.divider span.or {
+  width: 10%;
+  text-align: center;
+  border: none;
+  bottom: 15px;
+}
+.register {
+  position: relative;
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #f3772f;
+  font-size: 1.2em;
+  margin: 20px 0;
+}
+.register a {
+  color: #f3772f;
+}
+/*******************************
+            REGISTER
+*******************************/
+.register-page h1 {
+  font-size: 1.5em;
+  border-bottom: 1px solid #f3772f;
+  text-align: center;
+  width: 100%;
+  color: #f3772f;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.register-form {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+  float: none;
+}
+.register-form .form-group {
+  margin-bottom: 10px;
+}
+.register-form .form-group label {
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+.register-form input {
+  border: 1px solid #f3772f;
+}
+.register-form .submit {
+  width: 100%;
+  background: #f3772f;
+  font-size: 1.5em;
+}
+/*******************************
+            PATTERN
+*******************************/
+.pattern_bar {
+  position: relative;
+  float: left;
+  display: block;
+  width: 100%;
+}
+.top_bar {
+  background: #fff;
+  height: 60px;
+}
+.top_bar .return_button {
+  position: relative;
+  float: left;
+  background: url("../images/sprite.png") top left no-repeat;
+  width: 35px;
+  height: 35px;
+  background-position: -70px -655px;
+  padding: 0;
+  top: 13px;
+  margin-left: 10px;
+}
+.title_bar {
+  background: #515151;
+  height: 50px;
+}
+.title_bar h2 {
+  color: #ffffff;
+  font-size: 1.5em;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
+}
+.cart_bar {
+  position: absolute;
+  bottom: 0;
+  background: url("../images/cart_bar_mask.png") repeat-x;
+  height: 60px;
+  width: 100%;
+  display: block;
+}
+.cart_bar .cart_icon {
+  background: url("../images/sprite.png") top left no-repeat;
+  width: 40px;
+  height: 40px;
+  background-position: -80px -345px;
+  position: relative;
+  float: left;
+  display: block;
+}
+.cart_bar .cart_icon:before {
+  content: "5";
+  position: absolute;
+  right: 0;
   width: 20px;
   height: 20px;
-}
-.modalie .head a:hover span {
-  background-position: -20px 0px;
-}
-/*Content*/
-.modalie .modalie-content span {
-  margin-top: 20px;
-  float: left;
-  display: block;
-  background: url(../images/gui-ie.png) no-repeat;
-  background-position: 25px -45px;
-  width: 400px;
-  height: 140px;
-}
-.modalie .modalie-content p {
-  line-height: 140%;
-  float: left;
-  font-size: 16px;
-  margin-top: 15px;
-  margin-left: 40px;
-  width: 320px;
-  text-align: center;
-}
-.modalie .modalie-content a {
-  margin-top: 20px;
-  text-decoration: none;
-  margin-left: 30px;
-  float: left;
-  background: url(../images/gui-ie.png);
-  background-position: 0px -190px;
-  width: 340px;
-  height: 40px;
-}
-.modalie .modalie-content a:hover {
-  background-position: 0px -230px;
-}
-.modalie .modalie-content a p {
-  margin-left: 10px;
-  margin-top: 10px;
-  text-align: center;
-  color: white;
+  background: #f3772f;
+  border-radius: 50%;
 }
 .icon {
   padding: 0px;
@@ -160,30 +259,21 @@ div.modalie {
   top: 8px;
   margin-right: 5px;
 }
-.buttons {
-  background: #7abecc;
-  background-image: -moz-radial-gradient(50% 100%, circle cover, #7abecc, #6ca9b7 60%);
-  background-image: -webkit-radial-gradient(50% 100%, circle cover, #7abecc, #6ca9b7 60%);
-  background-image: -o-radial-gradient(50% 100%, circle cover, #7abecc, #6ca9b7 60%);
-  background-image: -ms-radial-gradient(50% 100%, circle cover, #7abecc, #6ca9b7 60%);
-  background-image: radial-gradient(50% 100%, circle cover, #7abecc, #6ca9b7 60%);
+.btn {
+  background: #f6a779;
   outline: none;
-  border: 1px solid #5b8f9e;
-  height: 30px;
+  height: 50px;
   color: #fff;
   padding: 0 10px;
   cursor: pointer;
   line-height: 30px;
   transition: background 0.4s ease-out;
   -webkit-transition: background 0.4s ease-out;
+  border: none;
 }
-.buttons:hover,
-.buttons.sel {
-  background: #5b8f9e;
-}
-.buttons.buttons-link {
-  height: 28px;
-  display: block;
+.btn:hover,
+.btn.sel {
+  background: #f3772f;
 }
 #table {
   width: 100%;
@@ -194,8 +284,6 @@ div.modalie {
 #table .tab-content {
   height: auto;
   width: 100%;
-  /*max-height: 450px;
-		min-height: 450px;*/
   overflow-x: auto;
 }
 #table a {
@@ -288,10 +376,130 @@ th {
 .sprite {
   background: url("../images/sprite.png") top left no-repeat;
 }
-.dialog_alert {
-  width: 85px;
-  height: 67px;
+.profile_image {
+  width: 110px;
+  height: 115px;
   background-position: -10px -10px;
+}
+.menu_logout {
+  width: 58px;
+  height: 60px;
+  background-position: -10px -135px;
+}
+.menu_history {
+  width: 60px;
+  height: 60px;
+  background-position: -10px -205px;
+}
+.btn_map {
+  width: 60px;
+  height: 60px;
+  background-position: -10px -275px;
+}
+.product_plus {
+  width: 60px;
+  height: 60px;
+  background-position: -10px -345px;
+}
+.slider_left {
+  width: 33px;
+  height: 60px;
+  background-position: -78px -135px;
+}
+.slider_right {
+  width: 33px;
+  height: 60px;
+  background-position: -80px -205px;
+}
+.menu_profile {
+  width: 35px;
+  height: 59px;
+  background-position: -80px -275px;
+}
+.icon_logo_visa {
+  width: 69px;
+  height: 50px;
+  background-position: -10px -415px;
+}
+.icon_logo_master {
+  width: 80px;
+  height: 50px;
+  background-position: -10px -475px;
+}
+.icon_logo_elo {
+  width: 50px;
+  height: 50px;
+  background-position: -10px -535px;
+}
+.product_minus {
+  width: 50px;
+  height: 50px;
+  background-position: -70px -535px;
+}
+.menu_home {
+  width: 50px;
+  height: 50px;
+  background-position: -10px -595px;
+}
+.menu_about {
+  width: 48px;
+  height: 48px;
+  background-position: -70px -595px;
+}
+.icon_cart {
+  width: 40px;
+  height: 40px;
+  background-position: -80px -345px;
+}
+.icon_payment {
+  width: 50px;
+  height: 40px;
+  background-position: -10px -655px;
+}
+.icon_money_small {
+  width: 65px;
+  height: 40px;
+  background-position: -10px -705px;
+}
+.icon_creditcard_small {
+  width: 60px;
+  height: 40px;
+  background-position: -10px -755px;
+}
+.menu_return {
+  width: 35px;
+  height: 35px;
+  background-position: -70px -655px;
+}
+.menu_shops {
+  width: 50px;
+  height: 34px;
+  background-position: -10px -805px;
+}
+.btn_trash {
+  width: 25px;
+  height: 33px;
+  background-position: -89px -415px;
+}
+.menu_sandwich_x {
+  width: 30px;
+  height: 30px;
+  background-position: -85px -705px;
+}
+.payment_add {
+  width: 35px;
+  height: 30px;
+  background-position: -80px -755px;
+}
+.btn_showdetails {
+  width: 30px;
+  height: 30px;
+  background-position: -70px -805px;
+}
+.menu_sandwich {
+  width: 40px;
+  height: 25px;
+  background-position: -10px -849px;
 }
 /***************
 *********************HOME e busca
@@ -301,7 +509,8 @@ form {
   float: left;
   width: 100%;
 }
-.form-group {
+.form-group,
+.form-inline {
   position: relative;
   float: left;
   width: 100%;
@@ -311,7 +520,7 @@ form {
   display: block;
   float: left;
   width: 100%;
-  height: 18px;
+  height: 50px;
   padding: 5px 5px;
   font-size: 14px;
   line-height: 1.42857143;
@@ -320,27 +529,8 @@ form {
   background-image: none;
   border: 1px solid #d5e7ed;
 }
-.form-control.biggest {
-  float: left;
-  width: 90%;
-  max-width: 390px;
-}
-.form-control.result-form {
-  width: 50%;
-  min-width: 155px;
-  max-width: 600px;
-}
-form .label {
-  font-size: 1.1em;
-  cursor: text;
-}
-form .label-pre {
-  position: absolute;
-  left: 11px;
-  top: 5px;
-}
-form .label-default {
-  font-size: 1.2em;
+.form-inline .form-group {
+  width: 45%;
 }
 /*******************************
           RESPONSIVE

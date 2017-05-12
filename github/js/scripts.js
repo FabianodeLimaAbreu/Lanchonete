@@ -17,7 +17,7 @@ function Init(){
   	* @name start
   	*/
 	this.start=function(txt){
-		alert(txt);
+		console.log(txt);
 	};	
 }
 

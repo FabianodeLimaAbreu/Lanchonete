@@ -13,25 +13,19 @@
 	}
 }
 
-.buttons{
-	background: #7abecc;
-	.radial-gradient(@from: #7abecc, @to: #6ca9b7);
+.btn{
+	background: #f6a779;
 	outline: none;
-    border: 1px solid #5b8f9e;
-    height: 30px;
+    height: 50px;
     color: #fff;
     padding: 0 10px;
     cursor: pointer;
-    //line-height: 30px;	
     line-height: 30px;	
     transition:background 0.4s ease-out ;
 	-webkit-transition:background 0.4s ease-out;
+	border: none;
     &:hover,&.sel{
-    	background: #5b8f9e;
-    }
-    &.buttons-link{
-    	height: 28px;
-    	display: block;
+    	background: @title;
     }
 }
 
@@ -43,8 +37,6 @@
 	.tab-content{
 		height: auto;
 		width: 100%;
-		/*max-height: 450px;
-		min-height: 450px;*/
 		overflow-x: auto;
 	}
 	a{
