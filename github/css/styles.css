@@ -205,19 +205,14 @@ body.noscroll {
   height: 35px;
   background-position: -70px -655px;
   padding: 0;
-  top: 13px;
+  top: 15px;
   margin-left: 10px;
 }
-.title_bar {
-  background: #515151;
-  height: 50px;
-}
-.title_bar h2 {
-  color: #ffffff;
-  font-size: 1.5em;
-  width: 100%;
-  line-height: 50px;
-  text-align: center;
+.top_bar .logo_small {
+  position: absolute;
+  left: 50%;
+  margin-left: -80px;
+  top: 10px;
 }
 .cart_bar {
   position: absolute;
@@ -235,15 +230,138 @@ body.noscroll {
   position: relative;
   float: left;
   display: block;
+  text-align: right;
+  margin: 10px 20px;
 }
-.cart_bar .cart_icon:before {
-  content: "5";
+.cart_bar .cart_icon span {
   position: absolute;
   right: 0;
   width: 20px;
   height: 20px;
   background: #f3772f;
   border-radius: 50%;
+  text-align: center;
+  font-weight: 400;
+  padding: 4px;
+  font-size: 1.2em;
+  color: #ffffff;
+}
+.cart_bar .subvalue {
+  font-size: 2.5em;
+  color: #ffffff;
+  position: relative;
+  float: left;
+  margin-top: 20px;
+}
+/*********************************
+************************************  MENU SANDUICHE ***************************/
+#menu-toggle {
+  height: 35px;
+  width: 40px;
+  margin: 15px 15px;
+  position: relative;
+  float: right;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+}
+#menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+#menu-toggle #menu_hamburger {
+  position: relative;
+  float: right;
+  height: 100%;
+  width: 100%;
+}
+#menu-toggle #menu_hamburger * {
+  transition: 0.25s ease-in-out;
+  box-sizing: border-box;
+}
+#menu-toggle #menu_hamburger span {
+  display: block;
+  background: #f3772f;
+  border-radius: 0px;
+  width: 40px;
+  height: 3px;
+  position: relative;
+  margin: 13px 0;
+}
+#menu-toggle #menu_hamburger span:nth-child(1) {
+  transition-delay: .5s;
+  margin-top: 0;
+}
+#menu-toggle #menu_hamburger span:nth-child(2) {
+  transition-delay: .625s;
+}
+#menu-toggle #menu_hamburger span:nth-child(3) {
+  transition-delay: .75s;
+}
+#menu-toggle #cross {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: rotate(45deg);
+}
+#menu-toggle #cross span {
+  background: #f3772f;
+}
+#menu-toggle #cross span:nth-child(1) {
+  height: 0%;
+  width: 4px;
+  position: absolute;
+  top: 0%;
+  left: 16px;
+  transition-delay: 0s;
+}
+#menu-toggle #cross span:nth-child(2) {
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  left: 2px;
+  top: 14px;
+  transition-delay: .25s;
+}
+#menu-toggle.open #menu_hamburger span {
+  width: 0%;
+}
+#menu-toggle.open #menu_hamburger span:nth-child(1) {
+  transition-delay: 0s;
+}
+#menu-toggle.open #menu_hamburger span:nth-child(2) {
+  transition-delay: .125s;
+}
+#menu-toggle.open #menu_hamburger span:nth-child(3) {
+  transition-delay: .25s;
+}
+#menu-toggle.open #cross span:nth-child(1) {
+  height: 96%;
+  transition-delay: .625s;
+}
+#menu-toggle.open #cross span:nth-child(2) {
+  width: 80%;
+  transition-delay: .375s;
+}
+/*******************************
+            CONTAINER
+*******************************/
+.container {
+  position: relative;
+  float: left;
+  width: 98%;
+  left: 1%;
+  height: auto;
+}
+.title_bar {
+  background: #515151;
+  height: 50px;
+}
+.title_bar h2 {
+  color: #ffffff;
+  font-size: 1.6em;
+  width: 100%;
+  line-height: 50px;
+  text-align: center;
 }
 .icon {
   padding: 0px;

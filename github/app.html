@@ -30,14 +30,36 @@
     <div id="wrap">
       <div class="pattern_bar top_bar">
         <button type="button" class="btn return_button"></button>
-        <img src="images/logo_small.png" height="39" width="163" alt="">
+        <img src="images/logo_small.png" height="39" width="163" alt="" class="logo_small">
+        <!--<button fb-menu class="menu-svg">
+          <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="40px" height="10px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+            <g>
+              <g>
+                <path fill="#cb612d" d="M0,0v0.633h30V0H0z M0,29.572h30v-0.633H0V29.572z M0,15.846h30v-0.633H0V15.846z" class="sanduiche"></path>
+              </g>
+            </g>
+          </svg>
+        </button>-->
+        <div id="menu-toggle"> <!--class="open"-->
+          <div id="menu_hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="cross">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       </div>
-      <div class="pattern_bar title_bar">
-        <h2>Página</h2>
+      <div class="container">
+        <div class="pattern_bar title_bar">
+          <h2>Página</h2>
+        </div>
       </div>
-      <a href="#cart" class="cart_bar">
-        <!--<span class="cart_icon">5</span><p class="subvalue">R$ 00,00</p>-->
-      </a>
+      <div class="cart_bar">
+        <a href="#cart" class="cart_icon"><span>5</span></a><p class="subvalue">R$ 00,00</p>
+      </div>
     </div>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <!-- build:js js/scripts.js -->
